@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clear</title>
+	<style>
+		img {
+			vertical-align: top;
+		}
+		.area {
+			width: 800px;
+			margin: 0 auto;
+			border: 3px solid red;
+		}
+		.area .thumb {
+			border: 3px solid;
+			float: left;
+		}
+		/*area 클래스의 바로 뒤쪽 영역에 clear 적용하여 float 성질 없애기*/
+		.area:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="area">
+		<div class="thumb"><img src="http://placehold.it/100x100" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x100" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x100" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x100" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x100" alt=""></div>
+	</div>
+	<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sit earum iste, possimus, error voluptatibus dolores facere pariatur eaque numquam rerum obcaecati! Velit quas illum dolorum reprehenderit doloribus fuga provident eaque vitae, cumque autem! Soluta quia eaque optio cum consequuntur at dolorem illo cupiditate quam ab aut culpa expedita minus porro, dolores quos reiciendis enim quae rem sit nobis molestias quibusdam? Dolore iste modi veniam doloribus iusto asperiores voluptate molestias quia tenetur sit exercitationem, recusandae laudantium ex fugit nam expedita! Commodi iste pariatur, ullam! Explicabo non laboriosam, ducimus, incidunt sunt et voluptatibus eveniet veritatis! Pariatur excepturi fugit nemo tempore tenetur.</p>
+</body>
+</html>

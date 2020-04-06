@@ -1,0 +1,13 @@
+/*html의 스타일을 위한 css 파일*/
+@charset "utf-8";
+
+h1 {
+	color: red;
+	background-color: pink;
+	border-bottom: 5px solid;
+}
+
+p {
+	color: blue;
+	background-color: lightblue;
+}

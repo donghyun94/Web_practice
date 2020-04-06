@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Center position</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+		.content {
+			width: 800px;
+			height: 400px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			/*가운데 정렬을 위해 박스 크기의 반 만큼 옮기기*/
+			margin-left: -400px;
+			margin-top: -200px;
+			background-color: pink;
+			overflow: hidden;
+
+		}
+		.inner {
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="inner">
+			<h1>Title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sint unde cumque iusto incidunt laudantium nulla cum aut, dolore odio id rerum delectus ea vitae cupiditate quibusdam repudiandae corporis vero, quam nostrum illum perferendis illo necessitatibus, animi. Accusantium doloribus aliquid nobis voluptatum, non ab iste placeat quod cumque, facere beatae eligendi exercitationem. Voluptatum fugit doloribus placeat nam reprehenderit ullam et nisi earum ipsa similique, necessitatibus, consequatur quo quaerat, illo voluptate error tenetur. Nihil dolores enim vero, perferendis nesciunt hic, harum sunt fugit veritatis temporibus at dignissimos iusto ea, qui saepe alias dicta suscipit adipisci corrupti earum sit a officia quia!</p>
+		</div>
+	</div>
+</body>
+</html>

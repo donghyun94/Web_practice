@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Form controls</title>
+</head>
+<body>
+	<!-- method = get: 주소표시줄에 필드가 출력됨 / post: 출력 안됨 -->
+	<form action="#" method="post">
+		<!-- fieldset은 서식들을 묶어주는 역할, value는 실제 전송 값 -->
+		<fieldset>
+			<legend>항목</legend>
+			<p>
+				<!-- label for 값은 id와 같게 해주기! -->
+				<label for="email">e-mail</label>
+				<input type="text" id="email" name="email" value="">
+			</p>
+			<p>
+				<label for="pw">password</label>
+				<input type="password" id="pw" name="pw" value="">
+				<input type="button" value="비밀번호 찾기">
+			</p>
+			<p>
+				<label for="comment">자기소개</label>
+				<textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+			</p>
+			<p>
+				<!-- name 값을 같게 해야 여러 개 중 하나 선택이 됨 -->
+				<span>성별</span>
+				<label for="male">남자</label>
+				<input type="radio" id="male" name="sex" value="male">
+				<label for="female">여자</label>
+				<input type="radio" id="female" name="sex" value="male">
+				<label for="hermaphrodite">자웅동체</label>
+				<input type="radio" id="hermaphrodite" name="sex" value="hermaphrodite">
+			</p>
+			<p>
+				<!-- 선택 상자 -->
+				<label for="loc">지역</label>
+				<select name="loc" id="loc">
+					<option value="">서울</option>
+					<option value="">경기</option>
+					<option value="">그 외</option>
+				</select>
+			</p>
+			<p>
+				<!-- 체크 박스 -->
+				<span>좋아하는 음식은?</span>
+				<label for="west">양식</label>
+				<input type="checkbox" id="west" name="" value="west">
+				<label for="cn">중식</label>
+				<input type="checkbox" id="cn" name="" value="cn">
+				<label for="ko">한식</label>
+				<input type="checkbox" id="ko" name="" value="ko">
+				<label for="jp">일식</label>
+				<input type="checkbox" id="jp" name="" value="jp">
+			</p>
+		</fieldset>
+		<p>
+			<input type="submit" value="가입 하기">
+		</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>html5 forms</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<fieldset>
+			<legend>html5 form</legend>
+			<p>
+				<label for="username">이름</label>
+				<input type="text" id="username" name="username", value="" placeholder="name" autofocus="">
+			</p>
+			<p>
+				<!-- required는 필수 입력 항목 -->
+				<label for="usermail">메일</label>
+				<input type="email" id="usermail" name="usermail" value="" placeholder="abc@abc.abc" required="">
+			</p>
+			<p>
+				<label for="userurl">웹 주소</label>
+				<input type="url" id="userurl" name="userurl" value="" placeholder="http://www.abc.abc">
+			</p>
+			<p>
+				<!-- 숫자 표현 -->
+				<label for="age">나이</label>
+				<input type="number" id="age" name="age" min="1" max="100" value="">
+				<span>세</span>
+			</p>
+			<p>
+				<!-- 슬라이드 바 -->
+				<label for="userrange"></label>
+				<input type="range" id="userrange" name="userrange" min="0" max="100" step="10" value="0">
+			</p>
+			<p>
+				<label for="userdate">생일</label>
+				<input type="date" id="userdate" name="userdate" value="2020-01-01">
+			</p>
+			<p>
+				<label for="usercolor">좋아하는 색</label>
+				<input type="color" id="usercolor" name="usercolor" value="">
+			</p>
+			<p>
+				<label for="usertel">연락처</label>
+				<input type="tel" id="usertel" name="usertel" value="">
+			</p>
+		</fieldset>
+		<input type="submit" value="send">
+</body>
+</html>

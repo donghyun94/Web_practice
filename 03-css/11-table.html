@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+	<style>
+		
+		.mytab {
+			width: 500px;
+			/*테이블 경계를 얇게*/
+			border-collapse: collapse;
+			/*테이블 폭 맞춤*/
+			table-layout: fixed;
+
+		}
+		.mytab th, .mytab td {
+			border: 1px solid red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<table class="mytab">
+		<caption>Table</caption>
+		<thead>
+			<tr>
+				<th scope="col">head1</th>
+				<th scope="col">head2</th>
+				<th scope="col">head3</th>
+				<th scope="col">head4</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vero nihil voluptatem odio eius praesentium, id, minima tenetur optio saepe neque consequuntur iusto corporis temporibus quidem eos ratione nobis vel.</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector</title>
+	<style>
+		a {	text-decoration: none;}
+		/*링크가 걸려있는 a 태그*/
+		a:link {color: green;}
+		/*이미 방문한 링크*/
+		a:visited {color: red;}
+		/*마우스 올렸을 때*/
+		a:hover {color: pink;}
+		/*누를 때*/
+		a:active {color: blue;}
+		/*포커스*/
+		a:focus {background-color: skyblue;}
+
+		/*첫 줄만*/
+		.lead:first-line {background-color: lime;}
+		/*첫 글자만*/
+		.lead:first-letter {font-size: 5em;}
+		/*전, 후 영역*/
+		h1:before {content:'Before area '; color: blue;}
+		h1:after {content:' After area'; color: blue;}
+
+		/*우선순위: id > class > type*/
+		div {background-color: green;}
+		.footer {background-color: lightblue;}
+		#footer {background-color: purple;}
+		
+		/*!important를 이용하면 우선순위를 무시!*/
+		div {background-color: orange !important;}
+
+	</style>
+</head>
+<body>
+	<h1>css selector</h1>
+	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="http://www.daum.net">Corporis minus</a> numquam explicabo dolor aspernatur nobis sint dolorem, cumque similique est accusamus? Maiores, magni sed rerum aliquid, expedita eligendi dignissimos mollitia nobis, <a href="#">omnis tempora</a> provident ipsum iusto, sequi eum a in officiis doloribus repellat fugit corporis animi ut voluptatem non. Ullam.</p>
+	<hr>
+	<div class="footer" id="footer">
+		<p>This is footer.</p>
+	</div>
+</body>
+</html>
