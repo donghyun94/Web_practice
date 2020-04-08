@@ -1,0 +1,46 @@
+<!-- 테두리 있는 텍스트 상자 만들기! -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Box</title>
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+		body, h1, h2, h3, p {
+			margin: 0;
+			padding: 0;
+		}
+		body, h1, h2, h3, input, select, button,th, td {
+			font-size: 12px;
+		}
+
+		.box_type {
+			margin: 20px;
+			border: 10px solid #a8e469;
+			border-radius: 20px; /*css3에서는 이거 한 줄이면 둥근 상자 만들기 끝*/
+		}
+		.box_type .inner {
+			position: relative;
+			border: 1px solid #418f30;
+			border-radius: 10px; /*css3에서는 이거 한 줄이면 둥근 상자 만들기 끝*/
+			padding: 10px;
+		}
+		.box_type p {
+			margin: 10px;
+			line-height: 1.5em;
+		}
+	</style>
+</head>
+<body>
+<div class="box_type">
+	<div class="inner">
+		<p>내용은 이미지와 다를 수 있습니다.</p>
+		<p>내용은 이미지와 다를 수 있습니다.</p>
+		<p>내용은 이미지와 다를 수 있습니다.</p>
+	</div>
+</div>
+</body>
+</html>
