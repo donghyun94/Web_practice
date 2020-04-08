@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+	<style>
+		html, body {width: 100;height: 100%;}
+		body, p, ul, li, form, fieldset, input {margin: 0; padding: 0;}
+		body {font-size: 12px;}
+		img, fieldset {border: 0;}
+		ul, ol {list-style: none;}
+		a {text-decoration: none;}
+
+		#wrap {
+			width: 960px;
+			margin: 0px auto;
+		}
+		
+		.tab_list {
+			position: relative;
+			width: 500px;
+		}
+		
+		.tab_list li.m1,
+		.tab_list li.m2,
+		.tab_list li.m3 {}
+		
+		/*제목 버튼*/
+		.tab_list li.m1 > a,
+		.tab_list li.m2 > a,
+		.tab_list li.m3 > a {
+			display: block;
+			float: left;
+			line-height: 35px;
+			padding: 0 30px;
+			color: gray;
+			background-color: #efefef;
+			border: 1px solid black;
+		}
+		
+		/*활성화 된 제목 버튼*/
+		.tab_list li.m1.active > a,
+		.tab_list li.m2.active > a,
+		.tab_list li.m3.active > a {
+			position: relative;
+			background-color: #ffffff;
+			border-bottom-color: #ffffff;
+			z-index: 1;
+			color: #000000;
+			font-weight: 800;
+
+		}
+		
+		/*메뉴 목록*/
+		.tab_list li.m1 ul,
+		.tab_list li.m2 ul,
+		.tab_list li.m3 ul {
+			display: none; 
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 36px;
+			border-top: 1px solid black;
+		}
+		
+		.tab_list li.m1 ul li,
+		.tab_list li.m2 ul li,
+		.tab_list li.m3 ul li {
+			margin: 6px 0;
+			line-height: 1.5;
+		}
+
+		/*float 속성 없애기*/
+		.tab_list li.m1 ul li:after,
+		.tab_list li.m2 ul li:after,
+		.tab_list li.m3 ul li:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		
+		.tab_list li.m1 ul li a,
+		.tab_list li.m2 ul li a,
+		.tab_list li.m3 ul li a {
+			float: left;
+			color: #777777;
+		}
+		
+		/*날짜*/
+		.tab_list li.m1 ul li span,
+		.tab_list li.m2 ul li span,
+		.tab_list li.m3 ul li span {
+			float: right;
+		}
+		
+		.tab_list li.m1.active ul,
+		.tab_list li.m2.active ul,
+		.tab_list li.m3.active ul {
+			display: block; /*활성화 되었을 때만 내용이 보이도록 함*/
+		}
+
+		/*더보기*/
+		.tab_list li.m1 .more,
+		.tab_list li.m2 .more,
+		.tab_list li.m3 .more {
+			display: none;
+			position: absolute;
+			right: 0;
+			top: 12px;
+			line-height: 1.5;
+		}
+		
+		.tab_list li.m1 .more a,
+		.tab_list li.m2 .more a,
+		.tab_list li.m3 .more a {
+			color: #777777;
+		}
+		
+		.tab_list li.m1.active .more,
+		.tab_list li.m2.active .more,
+		.tab_list li.m3.active .more {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="tab_list">
+			<ul>
+				<li class="m1 active"><a href="#"><span>공지사항</span></a>
+					<ul>
+						<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a><span>2020-04-08</span></li>
+						<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a><span>2020-04-07</span></li>
+						<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a><span>2020-04-06</span></li>
+					</ul>
+					<p class="more"><a href="#">공지사항 더보기</a></li>
+
+				</li>
+				<li class="m2"><a href="#"><span>보도자료</span></a>
+					<ul>
+						<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a><span>2020-04-08</span></li>
+						<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a><span>2020-04-08</span></li>
+						<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a><span>2020-04-08</span></li>
+						<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a><span>2020-04-08</span></li>
+					</ul>
+					<p class="more"><a href="#">보도자료 더보기</a></li>
+
+				</li>
+				<li class="m3"><a href="#"><span>해명자료</span></a>
+					<ul>
+						<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a><span>2020-04-08</span></li>
+						<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a><span>2020-04-08</span></li>
+						<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a><span>2020-04-08</span></li>
+						<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a><span>2020-04-08</span></li>
+						<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a><span>2020-04-08</span></li>
+					</ul>
+					<p class="more"><a href="#">해명자료 더보기</a></li>
+
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
