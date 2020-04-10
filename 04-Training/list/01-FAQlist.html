@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        ul,
+        ol,
+        li,
+        dl,
+        dt,
+        dd,
+        table,
+        th,
+        td,
+        form,
+        fieldset,
+        legend,
+        input,
+        textarea,
+        button,
+        select {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        input,
+        textarea,
+        select,
+        button,
+        table {
+            font-size: 12px;
+        }
+
+        img,
+        fieldset {
+            border: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        em,
+        address {
+            font-style: normal;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .faq {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq .hgroup {}
+
+        .faq .hgroup h2 {
+            float: left;
+            margin: 15px 0;
+        }
+
+        .faq .hgroup button {
+            float: right;
+            margin: 18px 0;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        /* 플롯 해제하기 */
+        .faq .hgroup:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .faq .faq_list {
+            border-top: 1px solid #cccccc;
+        }
+
+        .faq .faq_list dt a {
+            display: block;
+            color: #666666;
+            padding: 8px 10px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        /* 활성화 된 제목 */
+        .faq .faq_list dt.active a {
+            border-bottom: none;
+            background-color: #eeeeee;
+            color: #222222;
+            font-weight: 800;
+        }
+
+        .faq .faq_list dt a:hover {
+            background-color: #eeeeee;
+        }
+
+        .faq .faq_list dd {
+            display: none;
+            padding: 8px 10px;
+            line-height: 1.5;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        /* 활성화된 글 */
+        .faq .faq_list dd.active {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- UI Object -->
+    <div class="faq">
+        <div class="hgroup">
+            <h2>FAQ</h2>
+            <button type="button"><span>답변 모두 여닫기</span></button>
+        </div>
+        <dl class="faq_list">
+            <dt><a href="#a1">Q:질문과 답변 목록은 무엇으로 마크업 해야 하나요?</a></dt>
+            <dd id="a1">
+                <p>A:비 순차 목록, 순차 목록, 정의 목록으로 마크업 할 수 있습니다. 더 나아가 각각의 항목 안에서 '질문'과 '답변'을 무엇으로 마크업 할 것인지에 대하여는 많은 고민이 필요
+                    합니다.</p>
+            </dd>
+
+            <dt class="active"><a href="#a2">Q:질문과 답변 목록은 무엇으로 마크업 해야 하나요?</a></dt>
+            <dd id="a2" class="active">
+                <p>A:비 순차 목록, 순차 목록, 정의 목록으로 마크업 할 수 있습니다. 더 나아가 각각의 항목 안에서 '질문'과 '답변'을 무엇으로 마크업 할 것인지에 대하여는 많은 고민이 필요
+                    합니다.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere officia sint, suscipit at et fuga ab
+                    nulla fugiat modi amet consectetur aperiam asperiores ipsum iusto aspernatur eveniet molestiae error
+                    ducimus!</p>
+            </dd>
+
+            <dt><a href="#a3">Q:질문과 답변 목록은 무엇으로 마크업 해야 하나요?</a></dt>
+            <dd id="a3">
+                <p>A:비 순차 목록, 순차 목록, 정의 목록으로 마크업 할 수 있습니다. 더 나아가 각각의 항목 안에서 '질문'과 '답변'을 무엇으로 마크업 할 것인지에 대하여는 많은 고민이 필요
+                    합니다.</p>
+            </dd>
+        </dl>
+    </div>
+    <!-- //UI Object -->
+</body>
+
+</html>
