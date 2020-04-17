@@ -12,6 +12,10 @@ h1 {
 h1 {
     color: #000088;
 }
+form,
+h2 {
+    display: none;
+}
 
 #wrap {
     width: 640px;
@@ -19,7 +23,4 @@ h1 {
 }
 .showing {
     display: block;
-}
-.hiding {
-    display: none;
 }
