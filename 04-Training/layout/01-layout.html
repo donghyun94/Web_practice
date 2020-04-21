@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>2column</title>
+        <style>
+            body,
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            ul,
+            ol,
+            li,
+            dl,
+            dt,
+            dd,
+            table,
+            th,
+            td,
+            form,
+            fieldset,
+            legend,
+            input,
+            textarea,
+            button,
+            select {
+                margin: 0;
+                padding: 0;
+            }
+            body,
+            input,
+            textarea,
+            select,
+            button,
+            table {
+                font-family: "나눔고딕", NanumGothic, "돋움", Dotum, AppleGothic,
+                    sans-serif;
+                font-size: 12px;
+            }
+            img {
+                vertical-align: top;
+            }
+            img,
+            fieldset {
+                border: 0;
+            }
+            ul,
+            ol {
+                list-style: none;
+            }
+            em,
+            address {
+                font-style: normal;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover,
+            a:active,
+            a:focus {
+                text-decoration: underline;
+            }
+
+            /* layout */
+            #wrap {
+                width: 960px;
+                margin: 0 auto;
+                background-color: gray;
+            }
+            #header {
+                padding: 20px;
+                background-color: red;
+            }
+            #container {
+                padding-bottom: 30px;
+                background-color: lime;
+            }
+            #container:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #container #content {
+                float: right;
+                width: 600px;
+                background-color: blue;
+            }
+            #container .aside {
+                float: left;
+                width: 360px;
+                background-color: orange;
+            }
+            #footer {
+                padding: 20px;
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <h1>LOGO</h1>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+            <div id="container">
+                <div id="content">
+                    <h2>Content</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Blanditiis odio ratione nobis assumenda tenetur deleniti
+                        iste quo eveniet aspernatur harum hic dolor quibusdam
+                        provident aperiam cumque praesentium fugiat, mollitia
+                        accusamus consequuntur dicta eligendi. Itaque numquam
+                        iste, maxime illum perferendis nihil maiores dolore
+                        dolorum, fuga enim odio molestias eveniet provident
+                        tempora ipsa cumque doloribus assumenda eum quae vel qui
+                        repellat. In, adipisci libero? Ipsum amet, modi,
+                        inventore aliquid ipsa quaerat numquam, accusamus porro
+                        officia rerum ea. Asperiores possimus quis ex, ducimus
+                        ab quisquam facere quidem similique officia cupiditate
+                        quod iste aperiam? Nisi, suscipit assumenda animi
+                        voluptates magni magnam dolores quasi quisquam?
+                    </p>
+                </div>
+                <div class="aside">
+                    <h2>Aside</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Incidunt voluptatem enim aperiam consequatur?
+                        Accusantium minima impedit sequi sed eum sunt earum,
+                        nemo provident consectetur suscipit vel perspiciatis!
+                        Nemo laboriosam alias iste porro reprehenderit dolorem
+                        in tenetur quasi repudiandae minus cupiditate,
+                        voluptates, earum nostrum facere eaque ullam. Tempore
+                        corporis blanditiis commodi explicabo repellat dolores
+                        impedit eius assumenda neque, rerum consequuntur!
+                        Quibusdam delectus eius in ad repellat esse, ex suscipit
+                        exercitationem tenetur consequuntur possimus illo ab
+                        quia error perspiciatis est ipsum earum.
+                    </p>
+                </div>
+            </div>
+            <div id="footer">
+                <address>Lorem ipsum dolor sit amet.</address>
+                <p>Copyright &copy;</p>
+            </div>
+        </div>
+    </body>
+</html>

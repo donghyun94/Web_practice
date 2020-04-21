@@ -11,7 +11,7 @@ function saveName(name) {
 
 // submit 때 실행하는 함수
 function handleSubmit(event) {
-    event.preventDefault();
+    event.preventDefault(); // submit을 했을 때 새로고침되는 현상을 막는다.
     showGreeting(input.value);
     saveName(input.value);
 }
