@@ -10,13 +10,19 @@
             }
             #header {
                 font-size: 2em;
-                background-color: #fff000;
+                background-color: #f0db4f;
             }
             .cuteman img {
                 width: 150px;
             }
-            .btn {
+            .btn input {
                 font-size: 3em;
+                color: #ffffff;
+                background: dodgerblue;
+                border: none;
+            }
+            .selected {
+                background: #ff0000;
             }
         </style>
     </head>
@@ -26,11 +32,11 @@
                 <h1>JS</h1>
             </div>
             <div id="container">
-                <ul class="list-cute">
-                    <li class="cuteman"><img src="img/cuteman1.png" alt="" /></li>
-                    <li class="cuteman"><img src="img/cuteman1.png" alt="" /></li>
-                    <li class="cuteman"><img src="img/cuteman1.png" alt="" /></li>
-                </ul>
+                <form>
+                    <input class="btn" type="button" value="버튼1" />
+                    <input class="btn" type="button" value="버튼2" />
+                    <input class="btn" type="button" value="버튼3" />
+                </form>
             </div>
         </div>
         <script src="dom.js"></script>
